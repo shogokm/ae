@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 Bootstrap</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- #rerigion Header -->
+    <header>
+
+        <!-- #region primary Nav -->
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- container-fluid = Full width | container = 80% -->
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="./index.html">PC Gadget and More</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link "href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./store.html">Store Hours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+
+              </div>
+            </div>
+          </nav>
+              <!-- #endregion Primary Nav -->
+        <!-- #region Banner -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./banner/banner1.jpg" class="d-block w-100" alt="Banner 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./banner/banner2.jpg" class="d-block w-100" alt="Banner 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./banner/banner3.jpg" class="d-block w-100" alt="Banner 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./banner/banner4.jpg" class="d-block w-100" alt="Banner 4">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- #endregion Banner -->
+
+        
+        
+        <!-- #region Secondary Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+          <!-- container-fluid = Full width | container = 80% -->
+          <div class="container-fluid">
+
+            <a class="navbar-brand" href="./index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link "href="./category-monitors.html">Monitors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category-keyboard.html">Keyboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category-mouse.html">Mouse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category-headset.html">Headset</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category-speakers.html">Speakers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category-flashdrive">Flash Drive</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+        <!-- #endregion Secondary Nav -->
+        
+    </header>
+    <!-- #endregion Header -->
+    
+    <!-- #region Main -->
+    <main class="container">
+        <div class="row py-3"></div>
+
+
+        <div class="row">
+          <!-- #region Section -->
+          <section class="col-9">
+            <h1 class="display-3">Home</h1>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+              <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/flashdisk-1.jpg" class="card-img-top" alt="Flash Disk">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P250</h4>
+                    <h5 class="card-title">Flash Disk 1</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Flash Disk 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                    </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/flashdisk-2.jpg" class="card-img-top" alt="Flash Disk">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P500</h4>
+                    <h5 class="card-title">Flash Disk 2</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Flash Disk 2"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                    </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+              <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/headset-1.jpg" class="card-img-top" alt="Headset1">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P350</h4>
+                    <h5 class="card-title">Head Set 1</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Head Set 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                    </div>
+                  </div>
+                </article>
+
+              <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/headset-2.jpg" class="card-img-top" alt="keyboard1">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P600</h4>
+                    <h5 class="card-title">Keyboard1</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Head Set 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                     
+                    </div>
+                  </div>
+                </article>
+
+              <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/keyboard-1.jpg" class="card-img-top" alt="keyboard1">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P600</h4>
+                    <h5 class="card-title">Keyboard1</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Head Set 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                    </div>
+                  </div>
+                </article>
+                   </form>
+
+                   <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/keyboard-2.jpg" class="card-img-top" alt="keyboard2">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P750</h4>
+                    <h5 class="card-title">Keyboard2</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Head Set 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                   </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+                   <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/monitor-1.jpg" class="card-img-top" alt="Monitor 1">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P1900</h4>
+                    <h5 class="card-title">Monitor 1</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Head Set 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                   </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+                   <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/monitor-2.jpg" class="card-img-top" alt="Monitor 2">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P2900</h4>
+                    <h5 class="card-title">Monitor 2</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Head Set 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                   </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+
+                   <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/mouse-2.jpg" class="card-img-top" alt="Mouse 2">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P495</h4>
+                    <h5 class="card-title">Mouse 2</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Mouse 2"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                   </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+                   <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/speaker-1.jpg" class="card-img-top" alt="Speaker 1">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P850</h4>
+                    <h5 class="card-title">Speaker 1</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Speaker 1"> 
+                      <input type="hidden" name="amount" value="5.95"> 
+             2         <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+     2                 <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                   </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+                   <article class="col">
+                <div class="card h-100">
+                  <img src="./thumbnails/speaker-2.jpg" class="card-img-top" alt="Speaker2 ">
+                  <div class="card-body">
+                    <h4 class="fs-5 fw-light fst-italic ps-2 border-start border-info border-2">P850</h4>
+                    <h5 class="card-title">Speaker </h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+
+                      <!-- Identify your business so that you can collect the payments. --> 
+                      <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> 
+                    
+                      <!-- Specify a Buy Now button. --> 
+                      <input type="hidden" name="cmd" value="_xclick"> 
+                    
+                      <!-- Specify details about the item that buyers will purchase. --> 
+                      <input type="hidden" name="item_name" value="Speaker "> 
+                      <input type="hidden" name="amount" value="5.95"> 
+                      <input type="hidden" name="currency_code" value="PHP"> 
+                    
+                      <!-- Display the payment button. --> 
+                      <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                      <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                      
+                   </form>
+                    
+                  </div>
+                </div>
+              </article>
+
+
+            </div>
+
+          </section>
+          <!-- #endregion Section -->
+          <!-- #region Aside -->
+          <aside class="col-lg-3 d-none d-lg-inline-block">
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+            <a href="./ads/ads1.jpg" target="_blank" rel="noopener noreferrer" class="d-inline-block my-2">
+             <img src="./ads/ads1.jpg" alt="Advertisement 1" class="img-fluid">
+            </a>
+
+            <a href="./ads/ads2.jpg" target="_blank" rel="noopener noreferrer" class="d-inline-block my-2">
+              <img src="./ads/ads2.jpg" alt="Advertisement 2" class="img-fluid">
+            </a>
+
+            <a href="./ads/ads3.jpg" target="_blank" rel="noopener noreferrer" class="d-inline-block my-2">
+              <img src="./ads/ads3.jpg" alt="Advertisement 3" class="img-fluid">
+            </a>
+            
+
+          </aside>
+          
+          <!-- #endregion Aside -->
+        </div>
+    </main>
+
+    <!-- #endregion Main -->
+    <footer class="bg-dark">
+      <p class="text-white text-center h6 pt-3">&copy; 2021 PC Gadgets and More, Some Rights Reserved</p>
+
+      <nav class="navbar-dark">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white-50 "href="./category-monitors.html">Monitors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="./category-keyboard.html">Keyboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="./category-mouse.html">Mouse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="./category-headset.html">Headset</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="./category-speakers.html">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="./category-flashdrive">Flash Drive</a>
+          </li>
+        </ul>
+      </nav>
+
+    </footer>
+    <!-- #endregion Footer -->
+
+    <script src="./js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
